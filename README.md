@@ -1,16 +1,29 @@
-🍎 Nhận dạng vật thể bằng Faster R-CNN
+🚀 Phát hiện Đối tượng với Transfer Learning (Faster R-CNN)
+📌 Tổng quan
+Kho lưu trữ (repository) này chứa mã nguồn để huấn luyện một mô hình Phát hiện Đối tượng (Object Detection) bằng phương pháp Transfer Learning với kiến trúc Faster R-CNN trên bộ dữ liệu Táo-Cam-Chuối (Apple-Orange-Banana). Hướng dẫn này bao gồm tất cả các bước từ chuẩn bị dữ liệu đến huấn luyện và đánh giá mô hình.
 
-Dự án này sử dụng Faster R-CNN (ResNet-50 backbone) để phát hiện và phân loại các loại trái cây trong ảnh.
-Mô hình được huấn luyện trên tập dữ liệu tuỳ chỉnh (custom dataset) và thực nghiệm trên Kaggle bằng PyTorch.
-🧠 Giới thiệu
+📋 Nội dung Chính
+Dự án này sẽ hướng dẫn bạn qua các khía cạnh sau:
 
-Dự án này triển khai mô hình Faster R-CNN để nhận dạng và phát hiện vật thể (trái cây).
-Mục tiêu là giúp máy tính có khả năng phát hiện vị trí và phân loại các đối tượng trong ảnh.
+✅ Các Khái niệm Cơ bản về Phát hiện Đối tượng.
 
-Mô hình được xây dựng bằng PyTorch, tận dụng mô hình pretrained từ COCO dataset và fine-tune trên tập dữ liệu riêng.
-⚙️ Kiến trúc mô hình
+✅ Áp dụng Transfer Learning cho Faster R-CNN.
 
-Backbone: ResNet-50 pretrained trên COCO
-Framework: PyTorch (torchvision.models.detection)
-Optimizer: SGD
-Loss: Kết hợp giữa classification loss và bounding box regression loss
+✅ Chuẩn bị & Gán nhãn (Annotating) Bộ Dữ liệu Táo-Cam-Chuối.
+
+✅ Huấn luyện Mô hình Từng Bước (Step-by-Step).
+
+✅ Đánh giá Hiệu suất & Thực hiện Dự đoán.
+
+🛠 Công nghệ Sử dụng (Tech Stack)
+Dự án này sử dụng các thư viện và công cụ sau:
+
+Python 🐍
+
+PyTorch 🔥 (Framework học sâu)
+
+OpenCV 📷 (Xử lý hình ảnh)
+
+Matplotlib 📊 (Trực quan hóa)
+
+LabelImg 🏷️ (Công cụ gán nhãn cho Object Detection)
